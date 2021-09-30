@@ -1,0 +1,9 @@
+App\Entity\Cidade:
+  exclusion_policy: ALL
+  properties:
+    id:
+      type: int
+    nome:
+      type: string
+    estado:
+      type: App\Entity\Estado

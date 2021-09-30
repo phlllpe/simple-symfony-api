@@ -1,0 +1,12 @@
+App\Entity\Cidade:
+  constraints:
+    - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+        fields: [nome, estado]
+  properties:
+    nome:
+      - NotNull: ~
+      - Type: string
+    estado:
+      - NotNull: ~
+      - Valid: ~
+      - Type: App\Entity\Estado

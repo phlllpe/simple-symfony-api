@@ -1,0 +1,9 @@
+App\Entity\Estado:
+  exclusion_policy: ALL
+  properties:
+    id:
+      type: int
+    nome:
+      type: string
+    sigla:
+      type: string

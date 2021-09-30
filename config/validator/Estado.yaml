@@ -1,0 +1,11 @@
+App\Entity\Estado:
+  constraints:
+    - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity:
+        fields: [nome]
+  properties:
+    nome:
+      - NotNull: ~
+      - Type: string
+    sigla:
+      - NotNull: ~
+      - Type: string
